@@ -37,7 +37,7 @@ var createPattern = function(path) {
 
 var initRiot = function(files) {
     var jasminePath = path.dirname(require.resolve('riot'));
-    files.unshift(createPattern(jasminePath + '/../riot.js'));
+    files.unshift(createPattern(jasminePath + '/../../riot.js'));
 };
 
 initRiot.$inject = ['config.files'];
